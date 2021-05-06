@@ -1,0 +1,351 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif
+}
+#navbar{
+    background-color: rgba(65, 5, 50, 0.795);
+    width: 100%;
+    height: 80px;
+    position: fixed;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: solid 2px rgba(241, 6, 241, 0.849);
+}
+
+.logo{
+    text-align: left;
+    font-size: 50px;
+    color: rgba(255, 255, 255, 0.774);
+    padding: 5px;
+    margin-left: 50px;
+}
+nav ul{
+    text-align: right;
+    list-style: none;
+    display: flex; 
+}
+nav li{
+    margin-top: 30px;
+}
+nav ul a{
+    text-decoration: none;
+    margin: 20px;
+    color: whitesmoke;
+    font-size: 25px;
+    padding: 20px;
+} 
+ nav ul li a:hover{
+    text-decoration: underline 2px;
+    color: rgba(175, 111, 100, 0.774);
+}
+.welcome-section{
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(to right, rgba(22, 21, 21, 0.815) , rgba(10, 7, 1, 0.788));
+}
+.welcome-section > h1{
+    font-size: 60px;
+    color: whitesmoke;
+}
+.welcome-section > p{
+    font-size: 30px;
+    margin-bottom: 200px;
+    color: rgb(255, 71, 200);
+}
+.projects{
+    background-color: rgba(7, 46, 82, 0.815);
+    margin-top: -20px;
+    width: 100%;
+    height: 110vh;
+
+
+}
+.section-header{
+    text-align: center;
+    padding: 150px 0 20px 0;
+    font-size: 40px;
+    margin-top: 20px;
+    text-decoration:underline;
+    color: rgba(211, 195, 195, 0.692);
+    
+}
+#proimg{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 80px;
+}
+.project-tile{
+    border: solid 4px rgba(130, 190, 240, 0.959);
+    border-radius: 10px;
+    background-color: rgba(44, 40, 40, 0.733);
+}
+.project-tile p{
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    
+}
+.project-tile img{
+    width: 400px;
+    height: 300px;
+}
+.project-tile p:hover{
+    color: palevioletred;
+}
+.consec{
+    width: 100%;
+    height: 80vh;
+    background-image: linear-gradient(to right, rgba(22, 21, 21, 0.815) , rgba(10, 7, 1, 0.788));
+    margin-top: 0px;
+    text-align: center;
+}
+#contact-heading{
+    padding-top: 200px;
+}
+.contact-heading{
+    font-size: 30px;
+    color: azure;
+}
+.contact-heading h{
+    margin-left: 250px;
+
+}
+.contact-heading p{
+    color: burlywood;
+    font-family: 'Times New Roman', Times, serif;
+}
+.contact-link{
+    color: cornsilk;
+    margin-top: 70px;
+}
+.contact-link a{
+    color: cornsilk;
+    padding: 40px;
+    font-size: 30px;
+    text-decoration: none;
+    font-family: cursive;
+}
+.contact-link a:hover{
+    text-decoration: underline;
+    color: rgba(199, 185, 130, 0.849);
+}
+#footer{
+    width: 100%;
+    height: 10vh;
+    border-top: solid 3px rgba(231, 27, 197, 0.89);
+    background-color: rgba(7, 46, 82, 0.815);
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    font-size: 20px;
+    padding-bottom: 20px;
+    color: whitesmoke; 
+}
+@media only screen and (max-width: 460px) {
+    .projects{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+    }
+    #proimg{
+        display: block;
+        justify-content: center;
+        padding: 10px;
+        margin: 10px;
+        box-sizing: border-box;
+    }
+    .project-tile img{
+        width: 100%;
+        height: 250px;
+        border-radius: 5px;
+    }
+    #navbar{
+        width: 100%;
+        height: 80px;
+        display: block;
+        text-align: center;
+        align-items: center;
+    }
+    
+    .logo{
+        font-family: monospace;
+        font-size: 30px;
+        padding:0px;
+        margin: 0px;
+        text-align: center;
+    }
+    nav ul{
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        padding: 0;
+    }
+    nav li{ 
+        margin-top: 5px;
+        
+    }
+    nav ul li a{
+        text-align: center;
+        padding: 0;
+        font-size: 20px;
+    }
+    
+    .welcome-section{
+        width: 100%;
+        height: 100vh;
+        text-align: center;
+    }
+    .welcome-section > h1{
+        font-size: 40px;
+        color: whitesmoke;
+    }
+    .section-header{
+        text-align: center;
+        padding: 20px 0 20px 0;
+        font-size: 30px;
+        margin-top: 20px;
+        text-decoration:underline;
+        color: rgba(211, 195, 195, 0.692);
+        
+    }
+    .consec{
+        width: 100%;
+        height: 100%;
+    }
+    #contact-heading{
+        margin: 0px;
+        padding: 40px;
+    }
+
+    .contact-link a{
+        display: block;
+        padding: 0px;
+        font-size: 20px;
+        text-decoration: none;
+        font-family: cursive;
+    }
+    
+    #footer{
+        width: 100%;
+        height: 10vh;
+        display: flex;
+        justify-content: center;
+        text-align: center; 
+        
+    }
+  }
+
+ @media only screen and (min-width: 760px) and (max-width:1220px) { 
+    #navbar{
+        width: 100%;
+        height: 80px; 
+        display: block; 
+        text-align: center;
+        align-items: center;
+    }
+    .logo{
+        font-family: monospace;
+        font-size: 30px;
+        padding:0px;
+        margin: 0px;
+        text-align: center;
+    }
+    nav ul{
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        padding: 0;
+    }
+    nav li{ 
+        margin-top: 5px;
+        
+    }
+    nav ul li a{
+        text-align: center;
+        padding: 20px;
+        font-size: 20px;
+    }
+    .projects{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+    #proimg{
+        display: block;
+        justify-content: center;
+        padding: 0px;
+        margin: 0px;
+        box-sizing: border-box;
+    }
+    .section-header{
+        margin-top: 0px;
+        padding: 60px 0px 30px 0px;
+    }
+    .project-tile{
+        width: 100%;
+        margin: 20px;
+        box-sizing: border-box;
+    }
+    .project-tile img{
+        width: 100%;
+        height: 250px;
+        border-radius: 5px;
+    }
+    .welcome-section{
+        width: 100%;
+        height: 70vh;
+        text-align: center;
+    }
+    .consec{
+        width: 100%;
+        height: 100%;
+    }
+    #contact-heading{
+        margin: 0px;
+        padding: 40px;
+    }
+
+    .contact-link a{
+        display: block;
+        padding: 0px;
+        font-size: 30px;
+        text-decoration: none;
+        font-family: cursive;
+    }
+    
+    #footer{
+        width: 100%;
+        height: 8vh;
+        display: flex;
+        justify-content: center;
+        text-align: center; 
+        
+    }
+
+    
+    
+
+} 
+
+
+
+
+
+
+
+
+
+
